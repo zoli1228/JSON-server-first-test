@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Davies",
+      "age": "25",
+      "sex": "Male"
+    }
+  ]
+}
