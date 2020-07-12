@@ -41,7 +41,7 @@ let fetchOptionsGET = {
 
 
 let refreshData = () => {
-const fetchData = fetch("http://localhost:3000/users", fetchOptionsGET).then(
+const fetchData = fetch("https://zoli1228.github.io/db/db.json", fetchOptionsGET).then(
     data => data.json().then(users => {
         for(let row of users) {
             let tr = document.createElement("tr");
@@ -75,7 +75,7 @@ const fetchData = fetch("http://localhost:3000/users", fetchOptionsGET).then(
                 body: addUserToDB(VAL_NAME(nameValue.value), VAL_AGE(ageValue.value), gender)          
             }
 
-            fetch('http://localhost:3000/users', FetchOptionsPOST).then(
+            fetch('https://zoli1228.github.io/db/db.json', FetchOptionsPOST).then(
                 resp => console.log(resp),
                 err => console.error(err)
             );
